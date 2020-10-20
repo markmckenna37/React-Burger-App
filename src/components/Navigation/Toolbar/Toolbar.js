@@ -9,7 +9,7 @@ const toolbar = (props) => (
     <header className={classes.Toolbar}>
         <div>Menu</div>
         <div className={classes.Logo}>
-        <Logo height="80%"/>
+        <Logo height="11%"/>
 
         </div>
         <nav>
