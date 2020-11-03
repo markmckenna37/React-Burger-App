@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from "react-router-dom"; 
+import { Route, Switch } from "react-router-dom"; 
 
 import Layout from './hoc/Layout/Layout';
 import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
@@ -10,10 +10,10 @@ class App extends Component {
     return (
       <div>
         <Layout>
-          <Route path="/" component={BurgerBuilder} />
+          <Switch>
           <Route path="/checkout" component={Checkout} />
-        <BurgerBuilder />
-        <Checkout/>
+          <Route path="/" exact component={BurgerBuilder} />
+          </Switch>
         </Layout>
       </div>
     );
