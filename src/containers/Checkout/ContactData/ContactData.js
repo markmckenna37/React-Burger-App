@@ -20,7 +20,7 @@ class ContactData extends Component {
     this.setState({ loading: true });
     const order = {
       ingredients: this.props.ingredients,
-      price: this.prose.price,
+      price: this.props.price,
       customer: {
         name: "Mark McKenna",
         address: {
@@ -69,7 +69,7 @@ class ContactData extends Component {
           name="zipCode"
           placeholder="Zip Code"
         />
-        <Button btnType="Success">Place Order</Button>
+        <Button btnType="Success" clicked={this.orderHandler}>Place Order</Button>
       </form>
       );
       if (this.state.loading) {
