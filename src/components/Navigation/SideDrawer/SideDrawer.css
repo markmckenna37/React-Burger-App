@@ -7,7 +7,7 @@
     top: 0;
     z-index: 200;
     background-color: white;
-    padding: 32px 15px;
+    padding: 32px 16px;
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
 }
@@ -22,17 +22,11 @@
     transform: translateX(0);
 }
 
-.Close { 
-    transform: translateX(-100%)
+.Close {
+    transform: translateX(-100%);
 }
 
 .Logo {
     height: 11%;
     margin-bottom: 32px;
-}
-
-@media (max-width: 499px) {
-    .DesktopOnly {
-        display: none;
-    }
 }

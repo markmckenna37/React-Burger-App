@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import classes from "./NavigationItems.css";
-import NavigationItem from "./NavigationItem/NavigationItem"
+import classes from './NavigationItems.css';
+import NavigationItem from './NavigationItem/NavigationItem';
 
 const navigationItems = () => (
     <ul className={classes.NavigationItems}>
@@ -10,4 +10,4 @@ const navigationItems = () => (
     </ul>
 );
 
-export default navigationItems
+export default navigationItems;
